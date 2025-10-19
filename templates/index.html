@@ -48,7 +48,7 @@
             }
 
             // Tampilkan pesan user di chat box
-            chatBox.innerHTML += `<div class="text-end mb-2"><strong>Kamu:</strong> ${message}</div>`;
+            chatBox.innerHTML += `<div class="text-end mb-2"><strong>Kamu :</strong> ${message}</div>`;
             userInput.value = ""; // Kosongkan input field
 
             try {
@@ -68,7 +68,7 @@
                 const data = await response.json(); // Ambil data JSON dari backend
 
                 // Tampilkan respons chatbot di chat box
-                chatBox.innerHTML += `<div class="text-start mb-2"><strong>Gemini:</strong> ${data.response}</div>`;
+                chatBox.innerHTML += `<div class="text-start mb-2"><strong>Hapis :</strong> ${data.response}</div>`;
 
             } catch (error) {
                 // Tampilkan pesan error jika fetch gagal
