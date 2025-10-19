@@ -6,7 +6,10 @@ from flask import Flask, render_template, request, jsonify
 # Cara aman: Simpan API Key di environment variable
 # Untuk sekarang, bisa langsung masukkan di sini (tapi JANGAN bagikan kode ini)
 # GANTI DENGAN API KEY KAMU YANG SEBENARNYA:
-API_KEY = "AIzaSyBWDSiNQsKQt8PY1qdFBIU1vesf-GgInU8"
+API_KEY = os.environ.get("API_KEY")
+
+if not API_KEY:
+    raise ValueError("API_KEY tidak ditemukan. Silakan atur environment variable API_KEY.")
 
 genai.configure(api_key = API_KEY)
 

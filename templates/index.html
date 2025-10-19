@@ -16,19 +16,16 @@
         }
     </style>
 </head>
-<body class="bg-light"> {/* Memberi warna latar belakang abu-abu muda */}
+<body class="bg-light">
 
-    <div class="Container py-5"> {/* 2. Wadah Utama (Container) */}
-        <h2 class="mb-4 text-center">Hapis's Ai</h2> {/* Judul */}
+    <div class="Container py-5">
+        <h2 class="mb-4 text-center">Hapis's Ai</h2>
 
-        <div class="card shadow-sm"> {/* 3. Kotak Chat (Card) */}
+        <div class="card shadow-sm">
             <div class="card-body">
-                {/* Area untuk menampilkan chat */}
-                <div id="chat-box" class="bg-white rounded">
-                    {/* Pesan chat akan ditambahkan di sini oleh JavaScript */}
-                </div>
-
-                {/* 4. Area Input Pesan */}
+               
+                <div id="chat-box" class="bg-white rounded"></div>
+                
                 <div class="input-group">
                     <input type="text" id="user-input" class="form-control" placeholder="Mau nanya apa ke Hapis?...">
                     <button class="btn btn-primary" onclick="sendMessage()">Kirim</button>
